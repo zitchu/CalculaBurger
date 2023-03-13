@@ -5,7 +5,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-[#2b2b2b]">
       <Sidebar />
       <h1>React Router</h1>
       <Outlet />
