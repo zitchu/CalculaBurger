@@ -1,15 +1,18 @@
 import React from 'react';
 
 import { Outlet } from 'react-router-dom';
+import Footer from './components/Sidebar/Footer';
 import Sidebar from './components/Sidebar/Sidebar';
+
+
 
 function App() {
   return (
-    <div className="App bg-[#2b2b2b]">
+    <div className='bg-black'>
       <Sidebar />
-      <h1>React Router</h1>
+      <h1>.</h1>
       <Outlet />
-      <p>footer</p>
+      <Footer />
     </div>
   )
 }

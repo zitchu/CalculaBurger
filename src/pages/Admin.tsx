@@ -4,21 +4,20 @@ import {motion} from 'framer-motion'
 export default function Admin() {
     const [move, setMove] = React.useState(false);
     return (
-        <div className='text-xl bg-[#2b2b2b]'>
-            <div>
+        <div className='text-xl bg-[#2b2b2b] text-[#bdff38]'>
+            <div className='h-full p-4 m-4'>
             <div className='bg-sea1 min-h-screen w-full bg-no-repeat bg-fixed items-center justify-center bg-cover bg-center foto' />
             <div className='-mt-10 h-20 w-full bg-gradient-to-b from-transparent via-verde to-transparent absolute text-center items-center pt-6'>
-
-            <button className="neon-button">Neon</button>
-            <button className="neon-button2">Bio</button>
-            <button className="neon-button3">Bio</button>
+                <button className="neon-button">Neon</button>
+                <button className="neon-button2">Bio</button>
+                <button className="neon-button3">Bio</button>
             </div>
             <div className='bg-sea2 min-h-screen w-full bg-no-repeat bg-fixed items-center justify-center bg-cover bg-center foto' />
             <div className='-mt-10 h-20 w-full bg-gradient-to-b from-transparent via-verde to-transparent absolute text-center items-center pt-6'>
 
-            <button className="neon-button">Neon</button>
-            <button className="neon-button2">Bio</button>
-            <button className="neon-button3">Bio</button>
+                <button className="neon-button">Neon</button>
+                <button className="neon-button2">Bio</button>
+                <button className="neon-button3">Bio</button>
             </div>
             <div className='bg-sea3 min-h-screen w-full bg-no-repeat bg-fixed items-center justify-center bg-cover bg-center foto' />
             </div>

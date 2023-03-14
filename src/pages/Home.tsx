@@ -8,9 +8,7 @@ export default function Home() {
     const [move, setMove] = React.useState(false);
     return   (
         <div className='text-xl bg-white h-full w-full'>
-            <Sidebar />
             <div className='w-full bg-black h-full items-center justify-center p-4 m-4 text-center'>
-
             <Parallax className='bg-black animation' pages={2} style={{ top: '0', left: '0' }}>
                 <ParallaxLayer className='z-10 fixed' offset={0} speed={1}><div> <Sidebar /></div> </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={3}>
@@ -24,7 +22,7 @@ export default function Home() {
                     <div className="animation_layer parallax" id='plano2'></div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={3}>
-                    <motion.div className='text-gradient font-sans contentando text-bold text-8xl' animate={{ y: move ? 600 : -600}} transition={{ type:"tween", duration: 4}}>
+                    <motion.div className='text-gradient font-sans contentando text-bold text-8xl' animate={{ y: move ? 600 : -500}} transition={{ type:"tween", duration: 3}}>
                     Título
                     </motion.div>
                 </ParallaxLayer>
