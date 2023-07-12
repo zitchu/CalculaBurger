@@ -23,7 +23,7 @@ export default function Home() {
                 </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={3}>
                     <motion.div className='text-gradient font-sans contentando text-bold text-8xl' animate={{ y: move ? 600 : -500}} transition={{ type:"tween", duration: 3}}>
-                    Título
+                    Hamburger do Zitchu
                     </motion.div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={1}>

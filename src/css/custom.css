@@ -297,3 +297,7 @@ body {
     z-index: 1;
     translate: 0 15%;
 }
+
+.z-9999 {
+    z-index: 9999;
+}
