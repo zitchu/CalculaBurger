@@ -48,7 +48,7 @@ function Calc() {
     };
     };
     return (
-    <div className="p-4 bg-red-800">
+    <div className="p-4">
     <h1 className="text-2xl font-bold mb-4 text-white">Calculadora de Carne</h1>
         <div className='flex justify-left gap-4 items-center'>
             <div className="mb-4 text-yellow-600">
@@ -58,6 +58,7 @@ function Calc() {
                 value={comiloes}
                 onChange={(e) => setComiloes(parseInt(e.target.value, 10))}
                 className="w-20 text-black p-2 border border-gray-300 rounded"
+                min={0}
                 />
             </div>
             <div className="mb-4 text-yellow-600">
@@ -67,6 +68,7 @@ function Calc() {
                 value={moderados}
                 onChange={(e) => setModerados(parseInt(e.target.value, 10))}
                 className="w-20 text-black p-2 border border-gray-300 rounded"
+                min={0}
                 />
             </div>
             <div className="mb-4 text-yellow-600">
@@ -76,6 +78,7 @@ function Calc() {
                 value={criancas}
                 onChange={(e) => setCriancas(parseInt(e.target.value, 10))}
                 className="w-20 text-black p-2 border border-gray-300 rounded"
+                min={0}
                 />
             </div>
         </div>
