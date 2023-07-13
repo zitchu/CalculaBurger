@@ -62,7 +62,7 @@ export default function Calculadora() {
                     </motion.div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={1} speed={2}>
-                    <div className=' -mt-20 text-white h-full bg-gradient'> <Calc /></div>
+                    <div className=' -mt-20 text-white h-full bg-transparent'> <Calc /></div>
                 </ParallaxLayer>
             </Parallax>
             
