@@ -224,17 +224,21 @@ body {
 
 .text-gradient {
     background: #FFFFFF;
-    background: linear-gradient(to top, #FFFFFF 18%, #E0801F 100%);
+    background: linear-gradient(to bottom, #991b1b, #EAB308 );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow:  0 2px 0.5em white;
+}
+
+.text-gradient2 {
+    background: #FFFFFF;
+    background: linear-gradient(to top, #991b1b, #e7b008 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar {
-    background-color: hsl(0 0% 100% / 0.2 );
-    border-radius: 5px;
+    background-color: #e7b00833;
     padding: 10px;
-    margin-left: 0;
 }
 
 .rotate-360 {

@@ -48,10 +48,10 @@ function Calc() {
     };
     };
     return (
-    <div className="p-4">
+    <div className="p-4 bg-red-800">
     <h1 className="text-2xl font-bold mb-4 text-white">Calculadora de Carne</h1>
         <div className='flex justify-left gap-4 items-center'>
-            <div className="mb-4 text-white">
+            <div className="mb-4 text-yellow-600">
                 <label className="block mb-2">Comilões(onas):</label>
                 <input
                 type="number"
@@ -60,7 +60,7 @@ function Calc() {
                 className="w-20 text-black p-2 border border-gray-300 rounded"
                 />
             </div>
-            <div className="mb-4 text-white">
+            <div className="mb-4 text-yellow-600">
                 <label className="block mb-2">Moderados(as):</label>
                 <input
                 type="number"
@@ -69,7 +69,7 @@ function Calc() {
                 className="w-20 text-black p-2 border border-gray-300 rounded"
                 />
             </div>
-            <div className="mb-4 text-white">
+            <div className="mb-4 text-yellow-600">
                 <label className="block mb-2">Crianças:</label>
                 <input
                 type="number"
@@ -79,18 +79,18 @@ function Calc() {
                 />
             </div>
         </div>
-    <div className='text-green-500'>
+    <div>
         <h2 className='text-xl'>Lista de compras:</h2>
         <ul className='list-disc m-5'>
-            <li>{calcularCompras().carne} kg de carne moída total, sendo {calcularCompras().kgCarne} kg de uma <strong className="text-white">carne mais gordurosa</strong> como carnes de churrasco e  {calcularCompras().kgCarne} kg de uma <strong className="text-white">carne menos gordurosa</strong> como carnes de segunda.</li>
-            <li>{calcularCompras().pao} <strong className="text-white">pães</strong></li>
-            <li>{calcularCompras().bacon} caixas de 250g de <strong className="text-white">bacon</strong> ou {calcularCompras().kgBacon} gramas de <strong className="text-white">bacon fatiado</strong> </li>
-            <li>{calcularCompras().alface} pé(s) de <strong className="text-white">alface</strong></li>
-            <li>{calcularCompras().tomate} <strong className="text-white">tomate(s)</strong></li>
-            <li>{calcularCompras().cebola} <strong className="text-white">cebola(s)</strong></li>
-            <li>{calcularCompras().kgQue} gramas de <strong className="text-white">queijo ralado</strong></li>
-            <li>{calcularCompras().queijo} fatias do seu<strong className="text-white"> queijo</strong> escolhido</li>
-            <li>{calcularCompras().creme} caixinha(s) de 200g de <strong className="text-white">creme de leite</strong></li>
+            <li>{calcularCompras().carne} kg de carne moída total, sendo {calcularCompras().kgCarne} kg de uma <strong className="text-gradient">carne mais gordurosa</strong> como carnes de churrasco e  {calcularCompras().kgCarne} kg de uma <strong className="text-gradient">carne menos gordurosa</strong> como carnes de segunda.</li>
+            <li>{calcularCompras().pao} <strong className="text-gradient">pães</strong></li>
+            <li>{calcularCompras().bacon} caixas de 250g de <strong className="text-gradient">bacon</strong> ou {calcularCompras().kgBacon} gramas de <strong className="text-gradient">bacon fatiado</strong> </li>
+            <li>{calcularCompras().alface} pé(s) de <strong className="text-gradient">alface</strong></li>
+            <li>{calcularCompras().tomate} <strong className="text-gradient">tomate(s)</strong></li>
+            <li>{calcularCompras().cebola} <strong className="text-gradient">cebola(s)</strong></li>
+            <li>{calcularCompras().kgQue} gramas de <strong className="text-gradient">queijo ralado</strong></li>
+            <li>{calcularCompras().queijo} fatias do seu<strong className="text-gradient"> queijo</strong> escolhido</li>
+            <li>{calcularCompras().creme} caixinha(s) de 200g de <strong className="text-gradient">creme de leite</strong></li>
         </ul>
     </div>
     </div>

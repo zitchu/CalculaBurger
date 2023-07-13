@@ -7,8 +7,8 @@ import Calc from './Calc';
 export default function Calculadora() {
     const [move, setMove] = React.useState(false);
     return (
-        <div className='text-black bg-blue-500 text-xl min-h-full'>
-            <Parallax className='bg-black animation' pages={2} style={{ top: '0', left: '0' }}>
+        <div className='text-black text-xl min-h-full'>
+            <Parallax className='bg-red-800 animation' pages={2} style={{ top: '0', left: '0' }}>
                 <ParallaxLayer className='z-9999 fixed' offset={0} speed={1}> <div> <Sidebar /></div> </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={0.8} >
                     <motion.div animate={{ y: move ? 0 : 50}} transition={{ type:"tween", duration: 4}}>
