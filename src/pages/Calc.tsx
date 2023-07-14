@@ -2,6 +2,17 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Calc() {
+    const [copied, setCopied] = useState(false);
+
+    const handleCopyClick = () => {
+        navigator.clipboard.writeText(listaCompras);
+        setCopied(true);
+    
+        setTimeout(() => {
+            setCopied(false);
+        }, 2000);
+        };
+
     const [comiloes, setComiloes] = useState(0);
     const [moderados, setModerados] = useState(0);
     const [criancas, setCriancas] = useState(0);
@@ -48,6 +59,17 @@ function Calc() {
         creme: totalCre,
     };
     };
+    const listaCompras = `
+    ${calcularCompras().carne} kg de carne moída total, sendo ${calcularCompras().kgCarne} kg de uma carne mais gordurosa como carnes de churrasco e ${calcularCompras().kgCarne} kg de uma carne menos gordurosa como carnes de segunda.
+    ${calcularCompras().pao} pães
+    ${calcularCompras().bacon} caixas de 250g de bacon ou ${calcularCompras().kgBacon} gramas de bacon fatiado
+    ${calcularCompras().alface} pé(s) de alface
+    ${calcularCompras().tomate} tomate(s)
+    ${calcularCompras().cebola} cebola(s)
+    ${calcularCompras().kgQue} gramas de queijo ralado
+    ${calcularCompras().queijo} fatias do seu queijo escolhido
+    ${calcularCompras().creme} caixinha(s) de 200g de creme de leite
+    `;
     return (
     <div className="p-4 bg-transparent shadow-lg rounded border-2 m-2 border-yellow-600">
     <h1 className="text-2xl font-bold mb-4">Calculadora de Carne</h1>
@@ -83,10 +105,20 @@ function Calc() {
                 />
             </div>
         </div>
-        <div className='shadow-lg rounded-lg px-2 pt-2'>
-        <h2 className='text-xl'>Lista de compras:</h2>
+        <div className='shadow-lg rounded-lg px-2 pt-2 flex flex-col'>
+        <div className="text-center no-style">
+            <button
+                className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'
+                onClick={handleCopyClick}
+            >
+                Copiar Lista de Compras
+            </button>
+            {copied && <span style={{ marginLeft: '10px' }}>Texto copiado!</span>}
+            </div>
         <ul className='list-disc text-white m-5'>
-            <li className="text-left">{calcularCompras().carne} kg de carne moída total, sendo {calcularCompras().kgCarne} kg de uma <strong className="text-gradient">carne mais gordurosa</strong> como carnes de churrasco e  {calcularCompras().kgCarne} kg de uma <strong className="text-gradient">carne menos gordurosa</strong> como carnes de segunda.</li>
+        <h2 className='text-xl'>Lista de compras:</h2>
+            
+            <li className="text-left">{calcularCompras().carne} kg de carne moída total, sendo {calcularCompras().kgCarne} kg de uma <strong className="text-gradient">carne mais gordurosa</strong> como carnes de <br/> churrasco e   {calcularCompras().kgCarne} kg de uma <strong className="text-gradient">carne menos gordurosa</strong> como carnes de segunda.</li>
             <li className="text-left">{calcularCompras().pao} <strong className="text-gradient">pães</strong></li>
             <li className="text-left">{calcularCompras().bacon} caixas de 250g de <strong className="text-gradient">bacon</strong> ou {calcularCompras().kgBacon} gramas de <strong className="text-gradient">bacon fatiado</strong> </li>
             <li className="text-left">{calcularCompras().alface} pé(s) de <strong className="text-gradient">alface</strong></li>
@@ -95,11 +127,13 @@ function Calc() {
             <li className="text-left">{calcularCompras().kgQue} gramas de <strong className="text-gradient">queijo ralado</strong></li>
             <li className="text-left">{calcularCompras().queijo} fatias do seu<strong className="text-gradient"> queijo</strong> escolhido</li>
             <li className="text-left">{calcularCompras().creme} caixinha(s) de 200g de <strong className="text-gradient">creme de leite</strong></li>
-            <li className="text-center no-style"><button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/Contatos/:id'>ir para receita</Link></button></li>
         </ul>
+            <div className="text-center no-style"><button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/Contatos/:id'>ir para receita</Link></button></div>
     </div>
     </div>
     );
 }
 
 export default Calc;
+
+
