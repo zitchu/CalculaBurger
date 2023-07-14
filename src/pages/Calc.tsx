@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Calc() {
     const [comiloes, setComiloes] = useState(0);
@@ -94,6 +95,7 @@ function Calc() {
             <li className="text-left">{calcularCompras().kgQue} gramas de <strong className="text-gradient">queijo ralado</strong></li>
             <li className="text-left">{calcularCompras().queijo} fatias do seu<strong className="text-gradient"> queijo</strong> escolhido</li>
             <li className="text-left">{calcularCompras().creme} caixinha(s) de 200g de <strong className="text-gradient">creme de leite</strong></li>
+            <li className="text-center no-style"><button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/Contatos/:id'>ir para receita</Link></button></li>
         </ul>
     </div>
     </div>
