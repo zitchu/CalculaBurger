@@ -9,7 +9,7 @@ export default function Sobre() {
     return   (
         <div className='text-xl bg-white h-full w-full overflow-x-hidden'>
             <div className='w-full bg-white h-full items-center justify-center p-4 m-4 text-center'>
-            <Parallax className='bg-black animation' pages={3} style={{ top: '0', left: '0' }}>
+            <Parallax className='bg-black animation' pages={2} style={{ top: '0', left: '0' }}>
                 <ParallaxLayer className='z-10 fixed' offset={0} speed={1}>
                     <div> 
                         <Sidebar />

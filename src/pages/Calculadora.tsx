@@ -19,6 +19,11 @@ export default function Calculadora() {
                         Role para baixo
                     </motion.div>
                 </ParallaxLayer>
+                <ParallaxLayer offset={0} speed={3}>
+                    <motion.div className='text-red-800 font-sans contentando text-bold text-8xl' animate={{ y: move ? 600 : -500}} transition={{ type:"tween", duration: 3}}>
+                    Calculadora
+                    </motion.div>
+                </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={0.8} >
                     <motion.div animate={{ y: move ? 0 : 50}} transition={{ type:"tween", duration: 4}}>
                     <div className="burger_layer parallax" id='burg8'></div>
@@ -30,11 +35,6 @@ export default function Calculadora() {
                 
                 <ParallaxLayer offset={0} speed={0.6}>
                 <motion.div animate={{ y: move ? 0 : 50}} transition={{ type:"tween", duration: 3}}><div className="burger_layer parallax" id='burg6'></div></motion.div>
-                </ParallaxLayer>
-                <ParallaxLayer offset={0} speed={3}>
-                    <motion.div className='text-red-800 font-sans contentando text-bold text-8xl' animate={{ y: move ? 600 : -500}} transition={{ type:"tween", duration: 3}}>
-                    Calculadora
-                    </motion.div>
                 </ParallaxLayer>
                 <ParallaxLayer offset={0} speed={0.5}>
                 <motion.div animate={{ y: move ? 0 : 50}} transition={{ type:"tween", duration: 2.5}}><div className="burger_layer parallax" id='burg5'></div></motion.div>
