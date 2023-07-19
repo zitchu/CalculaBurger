@@ -8,7 +8,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 
 function App() {
   return (
-    <div className='bg-black'>
+    <div className='bg-red-800'>
       <Sidebar />
       <h1>.</h1>
       <Outlet />

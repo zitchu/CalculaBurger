@@ -12,10 +12,10 @@ const Sidebar = () => {
         <nav className={`${open ? "h-20" : "h-12"} 'transition duration-300 w-full items-center text-yellow-500 font-sans flex flex-col navbar p-2 z-9999'`}>
             <button className={`rounded hover:bg-transparent ${open && "rotate-180 "} text-white hover:text-red-800 duration-500`} onClick={() => setOpen(!open)}><FontAwesomeIcon  icon={faBars} /></button> 
                 <div className={`text-xl  ${!open && "scale-0"}  rounded-lg px-2 transition-all duration-300`}>
-                    <button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/'>Home</Link></button>
-                    <button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/admin'>Admin</Link></button>
-                    <button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/calculadora'>Calculadora</Link></button>
-                    <button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/Contatos/:id'>Contatos</Link></button>
+                    <button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/'>Calculadora</Link></button>
+                    <button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/Receita'>Receita</Link></button>
+                    <button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/sobre'>Sobre</Link></button>
+                    <button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/Contatos'>Contatos</Link></button>
                 </div>
         </nav>
         </div>

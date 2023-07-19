@@ -128,7 +128,7 @@ function Calc() {
             <li className="text-left">{calcularCompras().queijo} fatias do seu<strong className="text-gradient"> queijo</strong> escolhido</li>
             <li className="text-left">{calcularCompras().creme} caixinha(s) de 200g de <strong className="text-gradient">creme de leite</strong></li>
         </ul>
-            <div className="text-center no-style"><button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/Contatos/:id'>ir para receita</Link></button></div>
+            <div className="text-center no-style"><button className='text-xl text-white hover:bg-yellow-600 hover:text-white rounded-lg p-2 transition-all duration-300'><Link to='/Receita'>ir para receita</Link></button></div>
     </div>
     </div>
     );

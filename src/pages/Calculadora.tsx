@@ -5,7 +5,7 @@ import Sidebar from '../components/Sidebar/Sidebar';
 import Calc from './Calc';
 
 export default function Calculadora() {
-    const [move, setMove] = React.useState(false);
+    const [move] = React.useState(false);
     return (
         <div className='text-black text-xl min-h-full'>
             <Parallax className='bg-red-800 animation' pages={2} style={{ top: '0', left: '0' }}>
