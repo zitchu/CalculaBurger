@@ -292,7 +292,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     /* background-position: -20px -40px; */
-    opacity: 0.8; 
+    opacity: 0.7; 
     transition: opacity 1s ease-in-out; /* Adicionando a transição */
 }
 
@@ -308,7 +308,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     /* background-position: -20px -40px; */
-    opacity: 0.8; 
+    opacity: 0.7; 
     transition: background-image 5s ease-in-out, opacity 1s ease-in-out; /* Adicionando a transição */
 }
 
@@ -323,7 +323,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     /* background-position: -20px -40px; */
-    opacity: 0.8; 
+    opacity: 0.7; 
     transition: background-image 5s ease-in-out, opacity 1s ease-in-out; /* Adicionando a transição */
 }
 
@@ -338,7 +338,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     /* background-position: -20px -40px; */
-    opacity: 0.8; 
+    opacity: 0.7; 
     transition: background-image 5s ease-in-out, opacity 1s ease-in-out; /* Adicionando a transição */
 }
 
@@ -353,7 +353,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     /* background-position: -20px -40px; */
-    opacity: 0.8; 
+    opacity: 0.7; 
     transition: background-image 5s ease-in-out, opacity 1s ease-in-out; /* Adicionando a transição */
 }
 
@@ -368,7 +368,7 @@ h1 {
     background-position: center;
     background-repeat: no-repeat;
     /* background-position: -20px -40px; */
-    opacity: 0.8; 
+    opacity: 0.7; 
     transition: background-image 5s ease-in-out, opacity 1s ease-in-out; /* Adicionando a transição */
 }
 
