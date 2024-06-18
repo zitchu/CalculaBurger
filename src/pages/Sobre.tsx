@@ -9,7 +9,7 @@ export default function Sobre() {
     return   (
         <div className='text-xl bg-white h-full w-full overflow-x-hidden'>
             <div className='w-full bg-white h-full items-center justify-center p-4 m-4 text-center'>
-            <Parallax className='bg-black animation' pages={2} style={{ top: '0', left: '0' }}>
+            <Parallax className='bg-black animation' pages={3} style={{ top: '0', left: '0' }}>
                 <ParallaxLayer className='z-10 fixed' offset={0} speed={1}>
                     <div> 
                         <Sidebar />
@@ -36,9 +36,8 @@ export default function Sobre() {
                 <ParallaxLayer offset={0} speed={1}>
                     <div className="animation_layer parallax" id='plano4'></div>
                 </ParallaxLayer>
-                <ParallaxLayer offset={1} speed={2}>
-                    <div className=' -mt-20 text-white flex flex-wrap'>
-                    <div className='basis-3/12'></div>
+                <ParallaxLayer offset={1} speed={1}>
+                    <div className=' -mt-20 text-white flex flex-wrap items-center justify-center'>
                     <div className='basis-6/12 pb-4 mb-4 h-full'>
                         <h1>Esse projeto</h1>
                         <p className="text-justify py-2 leading-8">
@@ -76,7 +75,11 @@ export default function Sobre() {
                         forma juntando vários dos conhecimentos que adquiri nesses 3 anos de estudo até agora.
                         </p>
                     </div>
-                    <div className='basis-3/12'></div>
+                    </div>
+                </ParallaxLayer>
+                <ParallaxLayer factor={0.5} offset={2} speed={0.4} >
+                    <div className='text-white text-center bottom-0 justify-center flex'>
+                        Feito em 2023
                     </div>
                 </ParallaxLayer>
             </Parallax>

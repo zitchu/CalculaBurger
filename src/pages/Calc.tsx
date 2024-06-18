@@ -27,19 +27,19 @@ function Calc() {
     
 
     const calcularCompras = () => {
-    // carnes
+    
     const totalCarne = comiloes * pesoCarne * 2 + moderados * pesoCarne * 1.5 + criancas * pesoCarne * 1;
     const taraCarne = ((comiloes * pesoCarne * 2 + moderados * pesoCarne * 1.5 + criancas * pesoCarne * 1) / 2).toFixed(2);
-    // pães
+    
     const totalPao = comiloes * quantPao * 2 + moderados * quantPao * 1 + criancas * quantPao * 1;
-    // saladas
+    
     const totalAlface = (comiloes * quantAlf / 12 + moderados * quantAlf / 12 + criancas * quantAlf / 12).toFixed(1);
     const totalTomate = (comiloes * quantTom / 6 + moderados * quantTom / 6 + criancas * quantTom / 6).toFixed(1);
     const totalCeb = (comiloes * quantCeb / 6 + moderados * quantCeb / 6 + criancas * quantCeb / 6).toFixed(1);
-    // bacon
+    
     const totalBacon = (comiloes * quantBacon / 6 + moderados * quantBacon / 6 + criancas * quantBacon / 6).toFixed(1);
     const pesoBacon = ((comiloes * quantBacon / 6 + moderados * quantBacon / 6 + criancas * quantBacon / 6)* 250).toFixed(0);
-    // queijo
+    
     const pesoQue = (comiloes * quantQue / 4 + moderados * quantQue / 4 + criancas * quantQue / 4)* 100;
     const totalQueijo = comiloes * 2 + moderados * 2 + criancas * 1;
     const totalCre = (comiloes * quantCeb / 6 + moderados * quantCeb / 6 + criancas * quantCeb / 6).toFixed(1)

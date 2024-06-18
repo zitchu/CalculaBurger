@@ -6,8 +6,7 @@ export default function Receita() {
         <div className='text-white bg-red-800 text-xl h-full w-full'>
             <div className='h-full relative py-10'>
                 <Link to='/' className='hover:bg-yellow-600 hover:text-white rounded-lg p-4 transition-all duration-300'>Voltar para calculadora</Link>
-{/*                 <Link to='/Contatos/2' className='p-2'>Contato 2</Link>
-                <Link to='/Contatos/3' className='p-2'>Contato 3</Link> */}
+
             </div>
             <div className='mt-0'>
                 <div>
@@ -73,11 +72,9 @@ export default function Receita() {
                         </div>
                         </div>
                     </div>
-                    <h2 className='text-center text-xl pt-8'>Agora é só montar e bom apetite!</h2>
+                    <h2 className='text-center text-xl pt-8 pb-8'>Agora é só montar e bom apetite!</h2>
                 </div>
-                <div className='p-4'>
-                    Conteúdo
-                </div>
+
             </div>
         </div>
     )
